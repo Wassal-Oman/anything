@@ -62,6 +62,22 @@ export class AppController {
         }
     }
 
+    // create admin
+    @Get('create-admin')
+    @Render('create-admin')
+    createAdminUser() {}
+
+    @Post('create-admin')
+    async signUpAdmin(@Body(ValidationPipe) registerDto: RegisterDto, @Res() res) {
+        const response = await this.appService.signUp(registerDto);
+
+        if(response.statusCode !== 201) {
+            res.redirect('/create-admin');
+        } else {
+            res.redirect('/');
+        }
+    }
+
     // 404
     @Get('404')
     @Render('404')
