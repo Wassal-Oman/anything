@@ -4,7 +4,22 @@ import { Controller, Get, Render } from '@nestjs/common';
 export class ShopController {
 
     // home
-    @Get('/')
+    @Get()
     @Render("shop/home")
     viewHome() {}
+
+    // profile
+    @Get("profile")
+    @Render("shop/profile")
+    profile() {}
+
+    // products
+    @Get("products")
+    @Render("shop/products")
+    products() {}
+
+    // orders
+    @Get("orders")
+    @Render("shop/orders")
+    orders() {}
 }

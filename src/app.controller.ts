@@ -78,8 +78,8 @@ export class AppController {
         }
     }
 
-    // 404
-    @Get('404')
-    @Render('404')
-    viewPageNotFound() {}
+    @Get("logout")
+    logout(@Res() res) {
+        res.redirect("/");
+    }
 }
