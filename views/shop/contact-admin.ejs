@@ -7,7 +7,7 @@
       content="width=device-width, initial-scale=1, shrink-to-fit=no"
     />
     <title>
-      ANY THING | Categories
+      ANY THING | Contact Admin
     </title>
     <!-- Favicon -->
     <link href="/img/brand/favicon.png" rel="icon" type="image/png" />
@@ -45,7 +45,7 @@
           <span class="navbar-toggler-icon"></span>
         </button>
         <!-- Brand -->
-        <a class="navbar-brand pt-0" href="/admin">
+        <a class="navbar-brand pt-0" href="/shop">
           <img
             src="/img/brand/icon.png"
             class="navbar-brand-img"
@@ -65,12 +65,12 @@
             >
               <div class="media align-items-center">
                 <span class="avatar avatar-sm rounded-circle">
-                  <img alt="Image placeholder" src="/img/theme/admin.png" />
+                  <img alt="Image placeholder" src="/img/theme/shop.jpg" />
                 </span>
               </div>
             </a>
             <div class="dropdown-menu dropdown-menu-arrow dropdown-menu-right">
-              <a href="/admin/profile" class="dropdown-item">
+              <a href="/shop/profile" class="dropdown-item">
                 <i class="ni ni-single-02"></i>
                 <span>My profile</span>
               </a>
@@ -88,7 +88,7 @@
           <div class="navbar-collapse-header d-md-none">
             <div class="row">
               <div class="col-6 collapse-brand">
-                <a href="/admin">
+                <a href="/shop">
                   <img src="/img/brand/icon.png" />
                 </a>
               </div>
@@ -111,28 +111,23 @@
           <!-- Navigation -->
           <ul class="navbar-nav">
             <li class="nav-item">
-              <a class=" nav-link" href="/admin">
+              <a class=" nav-link" href="/shop">
                 <i class="ni ni-tv-2 text-primary"></i> Dashboard
               </a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="/admin/users">
-                <i class="fas fa-users text-blue"></i> Users
-              </a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="/admin/orders">
+              <a class="nav-link" href="/shop/orders">
                 <i class="fas fa-boxes text-orange"></i> Orders
               </a>
             </li>
-            <li class="nav-item active">
-              <a class="nav-link active" href="/admin/categories">
-                <i class="fas fa-list-ul text-yellow"></i> Categories
+            <li class="nav-item">
+              <a class="nav-link" href="/shop/products">
+                <i class="fas fa-gift text-info"></i> Products
               </a>
             </li>
-            <li class="nav-item">
-              <a class="nav-link" href="/admin/products">
-                <i class="fas fa-gift text-info"></i> Products
+            <li class="nav-item active">
+              <a class="nav-link active" href="/shop/contact-admin">
+                <i class="fas fa-mail-bulk text-yellow"></i> Contact Admin
               </a>
             </li>
           </ul>
@@ -149,8 +144,8 @@
           <!-- Brand -->
           <a
             class="h4 mb-0 text-white text-uppercase d-none d-lg-inline-block"
-            href="/admin/users"
-            >Categories</a
+            href="/shop/products"
+            >Contact Admin</a
           >
           <!-- User -->
           <ul class="navbar-nav align-items-center d-none d-md-flex">
@@ -165,19 +160,17 @@
               >
                 <div class="media align-items-center">
                   <span class="avatar avatar-sm rounded-circle">
-                    <img alt="Image placeholder" src="/img/theme/admin.png" />
+                    <img alt="Image placeholder" src="/img/theme/shop.jpg" />
                   </span>
                   <div class="media-body ml-2 d-none d-lg-block">
-                    <span class="mb-0 text-sm  font-weight-bold"
-                      >Administrator</span
-                    >
+                    <span class="mb-0 text-sm  font-weight-bold">Shop</span>
                   </div>
                 </div>
               </a>
               <div
                 class="dropdown-menu dropdown-menu-arrow dropdown-menu-right"
               >
-                <a href="/admin/profile" class="dropdown-item">
+                <a href="/shop/profile" class="dropdown-item">
                   <i class="ni ni-single-02"></i>
                   <span>My profile</span>
                 </a>
@@ -198,57 +191,78 @@
           <div class="header-body"></div>
         </div>
       </div>
+      <!-- Page content -->
       <div class="container-fluid mt--7">
-        <!-- Table -->
-        <div class="row">
-          <div class="col">
-            <div class="card shadow">
-              <div class="card-header border-0">
-                <h3 class="mb-0">Categories Details</h3>
+        <div class="row justify-content-center">
+          <div class="col-xl-8 order-xl-1">
+            <div class="card bg-secondary shadow">
+              <div class="card-header bg-white border-0">
+                <div class="row align-items-center">
+                  <div class="col-8">
+                    <h3 class="mb-0">Write To Admin</h3>
+                  </div>
+                </div>
               </div>
-              <div class="table-responsive">
-                <table class="table align-items-center table-flush">
-                  <thead class="thead-light">
-                    <tr>
-                      <th scope="col">Name</th>
-                      <th scope="col">Manage</th>
-                    </tr>
-                  </thead>
-                  <tbody>
-                    <tr>
-                      <td>Category 1</td>
-                      <td>
-                        <button>
-                          <i class="fas fa-edit" style="color: maroon"></i>
-                        </button>
-                      </td>
-                    </tr>
-                    <tr>
-                      <td>Category 2</td>
-                      <td>
-                        <button>
-                          <i class="fas fa-edit" style="color: maroon"></i>
-                        </button>
-                      </td>
-                    </tr>
-                    <tr>
-                      <td>Category 3</td>
-                      <td>
-                        <button>
-                          <i class="fas fa-edit" style="color: maroon"></i>
-                        </button>
-                      </td>
-                    </tr>
-                    <tr>
-                      <td>Category 4</td>
-                      <td>
-                        <button>
-                          <i class="fas fa-edit" style="color: maroon"></i>
-                        </button>
-                      </td>
-                    </tr>
-                  </tbody>
-                </table>
+              <div class="card-body">
+                <form>
+                  <h6 class="heading-small text-muted mb-4">
+                    Message information
+                  </h6>
+                  <div class="pl-lg-4">
+                    <div class="row">
+                      <div class="col-lg-12">
+                        <div class="form-group">
+                          <label class="form-control-label" for="input-username"
+                            >Title</label
+                          >
+                          <input
+                            type="text"
+                            class="form-control form-control-alternative"
+                            placeholder="Enter Title"
+                          />
+                        </div>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="col-lg-12">
+                        <div class="form-group">
+                          <label
+                            class="form-control-label"
+                            for="input-first-name"
+                            >Type</label
+                          >
+                          <select
+                            name="type"
+                            class="form-control form-control-alternative"
+                            style="color: black"
+                          >
+                            <option value="value1">Complaint</option>
+                            <option value="value2">Info</option>
+                            <option value="value3">Order</option>
+                          </select>
+                        </div>
+                      </div>
+                      <div class="col-lg-12">
+                        <div class="form-group">
+                          <label
+                            class="form-control-label"
+                            for="input-last-name"
+                            >Description</label
+                          >
+                          <textarea
+                            name="description"
+                            class="form-control form-control-alternative"
+                            rows="5"
+                            placeholder="Enter description"
+                          ></textarea>
+                        </div>
+                      </div>
+                      <button type="submit" class="btn btn-primary">
+                        Send
+                      </button>
+                    </div>
+                  </div>
+                </form>
               </div>
             </div>
           </div>
@@ -259,7 +273,7 @@
             <div class="col-xl-6">
               <div class="copyright text-center text-xl-left text-muted">
                 &copy; 2019
-                <a href="/admin" class="font-weight-bold ml-1">ANY THING</a>
+                <a href="/shop" class="font-weight-bold ml-1">ANY THING</a>
               </div>
             </div>
             <div class="col-xl-6">

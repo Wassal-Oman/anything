@@ -19,11 +19,12 @@ export class AppController {
   // inject objects
   constructor(private appService: AppService) {}
 
-  // login
+  // sign in - GET
   @Get('/')
   @Render('login')
   login() {}
 
+  // sign in - POST
   @Post('signin')
   async signIn(@Body(ValidationPipe) loginDto: LoginDto, @Res() res) {
     const response = await this.appService.signIn(loginDto);
@@ -52,11 +53,12 @@ export class AppController {
     }
   }
 
-  // register
+  // sign up - GET
   @Get('signup')
   @Render('register')
   register() {}
 
+  // sign up - POST
   @Post('signup')
   async signUp(@Body(ValidationPipe) registerDto: RegisterDto, @Res() res) {
     const response = await this.appService.signUp(registerDto);
@@ -68,11 +70,12 @@ export class AppController {
     }
   }
 
-  // create admin
+  // create admin - GET
   @Get('create-admin')
   @Render('create-admin')
   createAdminUser() {}
 
+  // create admin - POST
   @Post('create-admin')
   async signUpAdmin(
     @Body(ValidationPipe) registerDto: RegisterDto,
@@ -87,14 +90,22 @@ export class AppController {
     }
   }
 
+  // about - GET
   @Get('about')
   @Render('about')
   about() {}
 
+  // contact - GET
   @Get('contact')
   @Render('contact')
   contact() {}
 
+  // terms and conditions - GET
+  @Get('terms-and-conditions')
+  @Render('terms-and-conditions')
+  termsAndConditions() {}
+
+  // log out - GET
   @Get('logout')
   logout(@Res() res) {
     res.redirect('/');

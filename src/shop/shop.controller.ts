@@ -2,24 +2,28 @@ import { Controller, Get, Render } from '@nestjs/common';
 
 @Controller('shop')
 export class ShopController {
+  // home
+  @Get()
+  @Render('shop/home')
+  viewHome() {}
 
-    // home
-    @Get()
-    @Render("shop/home")
-    viewHome() {}
+  // profile
+  @Get('profile')
+  @Render('shop/profile')
+  profile() {}
 
-    // profile
-    @Get("profile")
-    @Render("shop/profile")
-    profile() {}
+  // products
+  @Get('products')
+  @Render('shop/products')
+  products() {}
 
-    // products
-    @Get("products")
-    @Render("shop/products")
-    products() {}
+  // orders
+  @Get('orders')
+  @Render('shop/orders')
+  orders() {}
 
-    // orders
-    @Get("orders")
-    @Render("shop/orders")
-    orders() {}
+  // conatct admin
+  @Get('contact-admin')
+  @Render('shop/contact-admin')
+  contactAdmin() {}
 }

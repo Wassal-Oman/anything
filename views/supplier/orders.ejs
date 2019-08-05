@@ -1,1 +1,339 @@
-Orders
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <title>
+      ANY THING | Orders
+    </title>
+    <!-- Favicon -->
+    <link href="/img/brand/favicon.png" rel="icon" type="image/png" />
+    <!-- Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700"
+      rel="stylesheet"
+    />
+    <!-- Icons -->
+    <link href="/js/plugins/nucleo/css/nucleo.css" rel="stylesheet" />
+    <link
+      href="/js/plugins/@fortawesome/fontawesome-free/css/all.min.css"
+      rel="stylesheet"
+    />
+    <!-- CSS Files -->
+    <link href="/css/argon-dashboard.css?v=1.1.0" rel="stylesheet" />
+  </head>
+
+  <body class="">
+    <nav
+      class="navbar navbar-vertical fixed-left navbar-expand-md navbar-light bg-white"
+      id="sidenav-main"
+    >
+      <div class="container-fluid">
+        <!-- Toggler -->
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#sidenav-collapse-main"
+          aria-controls="sidenav-main"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <!-- Brand -->
+        <a class="navbar-brand pt-0" href="/supplier">
+          <img
+            src="/img/brand/icon.png"
+            class="navbar-brand-img"
+            alt="Icon Image"
+          />
+        </a>
+        <!-- User -->
+        <ul class="nav align-items-center d-md-none">
+          <li class="nav-item dropdown">
+            <a
+              class="nav-link"
+              href="#"
+              role="button"
+              data-toggle="dropdown"
+              aria-haspopup="true"
+              aria-expanded="false"
+            >
+              <div class="media align-items-center">
+                <span class="avatar avatar-sm rounded-circle">
+                  <img alt="Image placeholder" src="/img/theme/supplier.png" />
+                </span>
+              </div>
+            </a>
+            <div class="dropdown-menu dropdown-menu-arrow dropdown-menu-right">
+              <a href="/supplier/profile" class="dropdown-item">
+                <i class="ni ni-single-02"></i>
+                <span>My profile</span>
+              </a>
+              <div class="dropdown-divider"></div>
+              <a href="/logout" class="dropdown-item">
+                <i class="ni ni-user-run"></i>
+                <span>Logout</span>
+              </a>
+            </div>
+          </li>
+        </ul>
+        <!-- Collapse -->
+        <div class="collapse navbar-collapse" id="sidenav-collapse-main">
+          <!-- Collapse header -->
+          <div class="navbar-collapse-header d-md-none">
+            <div class="row">
+              <div class="col-6 collapse-brand">
+                <a href="/supplier">
+                  <img src="/img/brand/icon.png" />
+                </a>
+              </div>
+              <div class="col-6 collapse-close">
+                <button
+                  type="button"
+                  class="navbar-toggler"
+                  data-toggle="collapse"
+                  data-target="#sidenav-collapse-main"
+                  aria-controls="sidenav-main"
+                  aria-expanded="false"
+                  aria-label="Toggle sidenav"
+                >
+                  <span></span>
+                  <span></span>
+                </button>
+              </div>
+            </div>
+          </div>
+          <!-- Navigation -->
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class=" nav-link" href="/supplier">
+                <i class="ni ni-tv-2 text-primary"></i> Dashboard
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link " href="/supplier/products">
+                <i class="fas fa-gift text-yellow"></i> Products
+              </a>
+            </li>
+            <li class="nav-item active">
+              <a class="nav-link active" href="/supplier/orders">
+                <i class="fas fa-boxes text-orange"></i> Orders
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <div class="main-content">
+      <!-- Navbar -->
+      <nav
+        class="navbar navbar-top navbar-expand-md navbar-dark"
+        id="navbar-main"
+      >
+        <div class="container-fluid">
+          <!-- Brand -->
+          <a
+            class="h4 mb-0 text-white text-uppercase d-none d-lg-inline-block"
+            href="/supplier/orders"
+            >Orders</a
+          >
+          <!-- User -->
+          <ul class="navbar-nav align-items-center d-none d-md-flex">
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link pr-0"
+                href="#"
+                role="button"
+                data-toggle="dropdown"
+                aria-haspopup="true"
+                aria-expanded="false"
+              >
+                <div class="media align-items-center">
+                  <span class="avatar avatar-sm rounded-circle">
+                    <img
+                      alt="Image placeholder"
+                      src="/img/theme/supplier.png"
+                    />
+                  </span>
+                  <div class="media-body ml-2 d-none d-lg-block">
+                    <span class="mb-0 text-sm  font-weight-bold">Supplier</span>
+                  </div>
+                </div>
+              </a>
+              <div
+                class="dropdown-menu dropdown-menu-arrow dropdown-menu-right"
+              >
+                <a href="/supplier/profile" class="dropdown-item">
+                  <i class="ni ni-single-02"></i>
+                  <span>My profile</span>
+                </a>
+                <div class="dropdown-divider"></div>
+                <a href="/logout" class="dropdown-item">
+                  <i class="ni ni-user-run"></i>
+                  <span>Logout</span>
+                </a>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </nav>
+      <!-- End Navbar -->
+      <!-- Header -->
+      <div class="header bg-gradient-primary pb-8 pt-5 pt-md-8">
+        <div class="container-fluid">
+          <div class="header-body"></div>
+        </div>
+      </div>
+      <div class="container-fluid mt--7">
+        <!-- Table -->
+        <div class="row">
+          <div class="col">
+            <div class="card shadow">
+              <div class="card-header border-0">
+                <h3 class="mb-0">Orders Details</h3>
+              </div>
+              <div class="table-responsive">
+                <table class="table align-items-center table-flush">
+                  <thead class="thead-light">
+                    <tr>
+                      <th scope="col">Phone</th>
+                      <th scope="col">Title</th>
+                      <th scope="col">Count</th>
+                      <th scope="col">Date</th>
+                      <th scope="col">Status</th>
+                      <th scope="col">Manage</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>96132329</td>
+                      <td>
+                        Gifts
+                      </td>
+                      <td>
+                        25
+                      </td>
+                      <td>
+                        15 - Sep - 2019
+                      </td>
+                      <td>
+                        Pending
+                      </td>
+                      <td>
+                        <button>
+                          <i class="fas fa-edit" style="color: maroon"></i>
+                        </button>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>99887766</td>
+                      <td>
+                        Gifts and Goods
+                      </td>
+                      <td>
+                        10
+                      </td>
+                      <td>
+                        10 - Nov - 2019
+                      </td>
+                      <td>
+                        Delivered
+                      </td>
+                      <td>
+                        <button>
+                          <i class="fas fa-edit" style="color: maroon"></i>
+                        </button>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>98877661</td>
+                      <td>
+                        Goods
+                      </td>
+                      <td>
+                        34
+                      </td>
+                      <td>
+                        25 - Dec - 2019
+                      </td>
+                      <td>
+                        Rejected
+                      </td>
+                      <td>
+                        <button>
+                          <i class="fas fa-edit" style="color: maroon"></i>
+                        </button>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>92311034</td>
+                      <td>
+                        Gifts
+                      </td>
+                      <td>
+                        24
+                      </td>
+                      <td>
+                        07 - Oct - 2019
+                      </td>
+                      <td>
+                        Pending
+                      </td>
+                      <td>
+                        <button>
+                          <i class="fas fa-edit" style="color: maroon"></i>
+                        </button>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Footer -->
+        <footer class="footer">
+          <div class="row align-items-center justify-content-xl-between">
+            <div class="col-xl-6">
+              <div class="copyright text-center text-xl-left text-muted">
+                &copy; 2019
+                <a href="/supplier" class="font-weight-bold ml-1">ANY THING</a>
+              </div>
+            </div>
+            <div class="col-xl-6">
+              <ul
+                class="nav nav-footer justify-content-center justify-content-xl-end"
+              >
+                <li class="nav-item">
+                  <a href="/about" class="nav-link">About Us</a>
+                </li>
+                <li class="nav-item">
+                  <a href="/contact" class="nav-link">Contact Us</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </footer>
+      </div>
+    </div>
+    <!--   Core   -->
+    <script src="/js/plugins/jquery/dist/jquery.min.js"></script>
+    <script src="/js/plugins/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <!--   Optional JS   -->
+    <!--   Argon JS   -->
+    <script src="/js/argon-dashboard.min.js?v=1.1.0"></script>
+    <script src="https://cdn.trackjs.com/agent/v3/latest/t.js"></script>
+    <script>
+      window.TrackJS &&
+        TrackJS.install({
+          token: 'ee6fab19c5a04ac1a32a645abde4613a',
+          application: 'argon-dashboard-free',
+        });
+    </script>
+  </body>
+</html>
